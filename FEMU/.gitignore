@@ -1,0 +1,9 @@
+*.o
+*.d
+*.pyc
+build/
+bin/
+logs/
+.venv/
+.idea/
+.vscode/

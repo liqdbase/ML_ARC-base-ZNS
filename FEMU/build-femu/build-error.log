@@ -1,0 +1,40 @@
+[1/1565] Generating subprojects/dtc/version_gen.h with a custom command
+[2/1565] Generating pc-bios/edk2-i386-vars.fd with a custom command (wrapped by meson to capture output)
+[3/1565] Generating qemu-version.h with a custom command (wrapped by meson to capture output)
+[4/1564] Generating x86_64-softmmu-gdbstub-xml.c with a custom command (wrapped by meson to capture output)
+[5/1564] Generating 'libcommon.a.p/decode-insns.c.inc'
+[6/1564] Generating qga/QGA QAPI files with a custom command
+[7/1564] Compiling C object libsystem.a.p/hw_femu_arc_zns_arc.c.o
+FAILED: libsystem.a.p/hw_femu_arc_zns_arc.c.o 
+cc -m64 -Ilibsystem.a.p -I. -I.. -Isubprojects/dtc/libfdt -I../subprojects/dtc/libfdt -Isubprojects/libvduse -I../subprojects/libvduse -Iui -Iqapi -Itrace -Iui/shader -I/usr/include/pixman-1 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gio-unix-2.0 -fdiagnostics-color=auto -Wall -Winvalid-pch -Werror -std=gnu11 -O2 -g -fstack-protector-strong -Wempty-body -Wendif-labels -Wexpansion-to-defined -Wformat-security -Wformat-y2k -Wignored-qualifiers -Wimplicit-fallthrough=2 -Winit-self -Wmissing-format-attribute -Wmissing-prototypes -Wnested-externs -Wold-style-declaration -Wold-style-definition -Wredundant-decls -Wshadow=local -Wstrict-prototypes -Wtype-limits -Wundef -Wvla -Wwrite-strings -Wno-missing-include-dirs -Wno-psabi -Wno-shift-negative-value -isystem /home/liqdbase/FEMU/linux-headers -isystem linux-headers -iquote . -iquote /home/liqdbase/FEMU -iquote /home/liqdbase/FEMU/include -iquote /home/liqdbase/FEMU/host/include/x86_64 -iquote /home/liqdbase/FEMU/host/include/generic -iquote /home/liqdbase/FEMU/tcg/i386 -pthread -mcx16 -msse2 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -fno-strict-aliasing -fno-common -fwrapv -ftrivial-auto-var-init=zero -fzero-call-used-regs=used-gpr -fPIE -DCONFIG_SOFTMMU -DCOMPILING_SYSTEM_VS_USER -MD -MQ libsystem.a.p/hw_femu_arc_zns_arc.c.o -MF libsystem.a.p/hw_femu_arc_zns_arc.c.o.d -o libsystem.a.p/hw_femu_arc_zns_arc.c.o -c ../hw/femu/arc/zns_arc.c
+../hw/femu/arc/zns_arc.c:1:10: fatal error: hw/arc/zns_arc_final_seqlock.h: No such file or directory
+    1 | #include "hw/arc/zns_arc_final_seqlock.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+[8/1564] Compiling C object libsystem.a.p/hw_femu_arc_arc_ml_predictor.c.o
+FAILED: libsystem.a.p/hw_femu_arc_arc_ml_predictor.c.o 
+cc -m64 -Ilibsystem.a.p -I. -I.. -Isubprojects/dtc/libfdt -I../subprojects/dtc/libfdt -Isubprojects/libvduse -I../subprojects/libvduse -Iui -Iqapi -Itrace -Iui/shader -I/usr/include/pixman-1 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gio-unix-2.0 -fdiagnostics-color=auto -Wall -Winvalid-pch -Werror -std=gnu11 -O2 -g -fstack-protector-strong -Wempty-body -Wendif-labels -Wexpansion-to-defined -Wformat-security -Wformat-y2k -Wignored-qualifiers -Wimplicit-fallthrough=2 -Winit-self -Wmissing-format-attribute -Wmissing-prototypes -Wnested-externs -Wold-style-declaration -Wold-style-definition -Wredundant-decls -Wshadow=local -Wstrict-prototypes -Wtype-limits -Wundef -Wvla -Wwrite-strings -Wno-missing-include-dirs -Wno-psabi -Wno-shift-negative-value -isystem /home/liqdbase/FEMU/linux-headers -isystem linux-headers -iquote . -iquote /home/liqdbase/FEMU -iquote /home/liqdbase/FEMU/include -iquote /home/liqdbase/FEMU/host/include/x86_64 -iquote /home/liqdbase/FEMU/host/include/generic -iquote /home/liqdbase/FEMU/tcg/i386 -pthread -mcx16 -msse2 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -fno-strict-aliasing -fno-common -fwrapv -ftrivial-auto-var-init=zero -fzero-call-used-regs=used-gpr -fPIE -DCONFIG_SOFTMMU -DCOMPILING_SYSTEM_VS_USER -MD -MQ libsystem.a.p/hw_femu_arc_arc_ml_predictor.c.o -MF libsystem.a.p/hw_femu_arc_arc_ml_predictor.c.o.d -o libsystem.a.p/hw_femu_arc_arc_ml_predictor.c.o -c ../hw/femu/arc/arc_ml_predictor.c
+../hw/femu/arc/arc_ml_predictor.c:2:10: fatal error: hw/arc/arc_ml_predictor_seqlock.h: No such file or directory
+    2 | #include "hw/arc/arc_ml_predictor_seqlock.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+[9/1564] Generating pc-bios/edk2-riscv-vars.fd with a custom command (wrapped by meson to capture output)
+[10/1564] Generating pc-bios/edk2-i386-secure-code.fd with a custom command (wrapped by meson to capture output)
+[11/1564] Compiling C object libsystem.a.p/hw_femu_lib_rte_ring.c.o
+[12/1564] Generating pc-bios/edk2-i386-code.fd with a custom command (wrapped by meson to capture output)
+[13/1564] Generating pc-bios/edk2-riscv-code.fd with a custom command (wrapped by meson to capture output)
+[14/1564] Generating pc-bios/edk2-x86_64-secure-code.fd with a custom command (wrapped by meson to capture output)
+[15/1564] Generating pc-bios/edk2-x86_64-code.fd with a custom command (wrapped by meson to capture output)
+[16/1564] Generating pc-bios/edk2-arm-vars.fd with a custom command (wrapped by meson to capture output)
+[17/1564] Compiling C object libsystem.a.p/hw_femu_nvme-io.c.o
+FAILED: libsystem.a.p/hw_femu_nvme-io.c.o 
+cc -m64 -Ilibsystem.a.p -I. -I.. -Isubprojects/dtc/libfdt -I../subprojects/dtc/libfdt -Isubprojects/libvduse -I../subprojects/libvduse -Iui -Iqapi -Itrace -Iui/shader -I/usr/include/pixman-1 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/gio-unix-2.0 -fdiagnostics-color=auto -Wall -Winvalid-pch -Werror -std=gnu11 -O2 -g -fstack-protector-strong -Wempty-body -Wendif-labels -Wexpansion-to-defined -Wformat-security -Wformat-y2k -Wignored-qualifiers -Wimplicit-fallthrough=2 -Winit-self -Wmissing-format-attribute -Wmissing-prototypes -Wnested-externs -Wold-style-declaration -Wold-style-definition -Wredundant-decls -Wshadow=local -Wstrict-prototypes -Wtype-limits -Wundef -Wvla -Wwrite-strings -Wno-missing-include-dirs -Wno-psabi -Wno-shift-negative-value -isystem /home/liqdbase/FEMU/linux-headers -isystem linux-headers -iquote . -iquote /home/liqdbase/FEMU -iquote /home/liqdbase/FEMU/include -iquote /home/liqdbase/FEMU/host/include/x86_64 -iquote /home/liqdbase/FEMU/host/include/generic -iquote /home/liqdbase/FEMU/tcg/i386 -pthread -mcx16 -msse2 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -fno-strict-aliasing -fno-common -fwrapv -ftrivial-auto-var-init=zero -fzero-call-used-regs=used-gpr -fPIE -DCONFIG_SOFTMMU -DCOMPILING_SYSTEM_VS_USER -MD -MQ libsystem.a.p/hw_femu_nvme-io.c.o -MF libsystem.a.p/hw_femu_nvme-io.c.o.d -o libsystem.a.p/hw_femu_nvme-io.c.o -c ../hw/femu/nvme-io.c
+../hw/femu/nvme-io.c: In function ‘nvme_rw’:
+../hw/femu/nvme-io.c:283:18: error: unused variable ‘nlb’ [-Werror=unused-variable]
+  283 |         uint32_t nlb = le16_to_cpu(rw->nlb) + 1;
+      |                  ^~~
+cc1: all warnings being treated as errors
+[18/1564] Generating storage-daemon/qapi/QAPI files for qemu-storage-daemon with a custom command
+[19/1564] Generating pc-bios/edk2-aarch64-code.fd with a custom command (wrapped by meson to capture output)
+[20/1564] Generating pc-bios/edk2-arm-code.fd with a custom command (wrapped by meson to capture output)
+ninja: build stopped: subcommand failed.
